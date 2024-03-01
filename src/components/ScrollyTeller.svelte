@@ -138,7 +138,7 @@
   </div>
 
   <div class="foreground" slot="foreground">
-    <section>Please maximize your browser window for the best viewing experience.</section>
+    <section>Please maximize your browser window for the best viewing experience. hi</section>
     <section>This is the second section.</section>
     <section>This is the third section.</section>
     <section>This is the fourth section.</section>
