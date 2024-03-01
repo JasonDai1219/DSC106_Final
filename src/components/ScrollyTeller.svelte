@@ -95,7 +95,7 @@
 
   .progress-bars {
     position: absolute;
-    background: rgba(169, 168, 169, 0.2) /*  40% opaque */;
+    background: rgba(168, 168, 169, 0.2) /*  40% opaque */;
     visibility: visible;
   }
   
