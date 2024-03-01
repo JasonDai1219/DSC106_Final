@@ -76,7 +76,7 @@
       left: 0;
       right: 0;
       bottom: 0;
-      background-image: url('titanic.jpeg');
+      background-image: url('/titanic.jpeg');
       background-size: cover;
       background-position: center;
       opacity: 0.3;
