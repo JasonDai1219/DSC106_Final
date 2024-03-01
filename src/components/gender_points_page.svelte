@@ -9,8 +9,8 @@
     onMount(() => {
         const width = window.innerWidth;
         const height = window.innerHeight;
-        const pointsPerSideX = 70;
-        const pointsPerSideY = 30;
+        const pointsPerSideX = 60;
+        const pointsPerSideY = 40;
         const totalGeneratedPoints = 1309;
 
         // Assuming a fixed number of points for simplicity
