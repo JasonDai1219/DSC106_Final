@@ -102,7 +102,7 @@
     map.on("move", updateBounds);
     
     // Load a local image to use as the moving dot
-    map.loadImage('/good_ship.jpg', (error, image) => {
+    map.loadImage('static/good_ship.jpg', (error, image) => {
       if (error) throw error;
       
       // Add the image to the map style
@@ -117,7 +117,7 @@
         }
       });
     
-    map.loadImage('/bad_ship.jpg', (error, image) => {
+    map.loadImage('static/bad_ship.jpg', (error, image) => {
       if (error) throw error;
       map.addImage('custom-dot-final', image);
     });
