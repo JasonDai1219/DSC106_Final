@@ -118,7 +118,7 @@
         }
       });
     
-    map.loadImage('/bad_ship.jpg', (error, image) => {
+    map.loadImage('bad_ship.jpg', (error, image) => {
       if (error) throw error;
       map.addImage('custom-dot-final', image);
     });
