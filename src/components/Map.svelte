@@ -42,7 +42,7 @@
     type: 'Point',
     coordinates
   });
-  console.log(coordinates);
+  // console.log(coordinates);
 
   // Check if the current index is the last point in the path
   if (pathIndex === path.length - 1) {
