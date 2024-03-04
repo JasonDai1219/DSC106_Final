@@ -4,9 +4,11 @@
   import { geoMercator } from "d3-geo";
   import Graph from "./Graph.svelte";
   import GenderPointsPage from "./gender_points_page.svelte";
+  import Pclass_1Page from "./passenger_class1_points_page.svelte";
 
   let count, index, offset, progress;
   let width, height;
+  let currentVisualization = 'gender';
 
   // let adjustedWidth = width * 1;
   // let adjustedHeight = height * 1;
@@ -32,6 +34,10 @@
   };
 
   $: projection = geoMercator().fitSize([width * 1.05, height * 1.05], geoJsonToFit);
+
+  function toggleVisualization() {
+    currentVisualization = currentVisualization === 'gender' ? 'class1' : 'gender';
+  }
 </script>
 
 <style>
@@ -161,8 +167,15 @@
     <section>This is the second section.</section>
     <section>This is the third section.</section>
     <section>This is the fourth section.</section>
-    <section class="points">This is the fifth section.<GenderPointsPage {index} /></section>
-    <section>This is the sixth section.</section>
+    <section>
+      This is the fifth section.
+      <button on:click={toggleVisualization}>Switch Visualization</button>
+      {#if currentVisualization === 'gender'}
+        <GenderPointsPage {index} />
+      {:else}
+        <Pclass_1Page {index} />
+      {/if}
+    </section>
   </div>
 
 </Scroller>
