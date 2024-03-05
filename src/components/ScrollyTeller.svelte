@@ -175,8 +175,8 @@
       {:else}
         <Pclass_1Page {index} />
       {/if} -->
-      <GenderPointsPage {index} {currentVisualization} />
       <Pclass_1Page {index} {currentVisualization} />
+      <GenderPointsPage {index} {currentVisualization} />
     </section>
   </div>
 
