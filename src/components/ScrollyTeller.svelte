@@ -148,7 +148,7 @@
     <Graph {index} {width} {height} {projection} />
     <!-- <GenderPointsPage {index} /> -->
     <div class="progress-bars">
-      <p>total progress:<strong>{index + 1}/{count}</strong></p>
+      <p>total progress:<strong>{index + 1}/{count}</strong></p >
       <progress value={progress || 0} />
     </div>
   </div>
@@ -170,11 +170,13 @@
     <section>
       This is the fifth section.
       <button on:click={toggleVisualization}>Switch Visualization</button>
-      {#if currentVisualization === 'gender'}
+      <!-- {#if currentVisualization === 'gender'}
         <GenderPointsPage {index} />
       {:else}
         <Pclass_1Page {index} />
-      {/if}
+      {/if} -->
+      <GenderPointsPage {index} {currentVisualization} />
+      <Pclass_1Page {index} {currentVisualization} />
     </section>
   </div>
 

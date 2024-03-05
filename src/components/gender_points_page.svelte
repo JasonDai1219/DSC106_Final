@@ -1,6 +1,7 @@
 <script>
     import { onMount } from 'svelte';
     export let index;
+    export let currentVisualization;
 
     let points = [];
     const spacing = 12;
@@ -28,11 +29,7 @@
     });
 
     let isVisible = false;
-    $: if (index === 4) {
-        isVisible = true;
-    } else {
-        isVisible = false;
-    }
+    $: isVisible = index === 4 && currentVisualization === 'gender';
 </script>
 
 <svg class="graph" width="100vw" height="100vh" class:visible={isVisible}>
